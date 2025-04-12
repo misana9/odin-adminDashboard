@@ -1,0 +1,65 @@
+body, html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+
+#container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+#sidebar{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #0093d0;
+    color: white;
+}
+
+#header{
+    grid-column: 2/3;
+    background-color: bisque;
+}
+
+#main{
+    background-color: grey;
+}
+
+#navigation, #nav2{
+    padding: 25px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: repeat(7,1fr);
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+    grid-column: 2/3;
+}
+
+#branding{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#brand-icon{
+    height: 50px;
+    padding: 15px;
+}
+
+#side-title{
+    padding: 20px 0px;
+}
+
+.icon{
+    height: 25px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(300deg) brightness(101%) contrast(105%);
+}
+
